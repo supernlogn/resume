@@ -1,0 +1,174 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{Resume}
+\author{Ioannis Athanasiadis}
+\date{September 2025}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+\simpleheader{headercolour}{Ioannis}{Athanasiadis}{Machine Perception \& AI Engineer}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{0.8cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{me.jpg}
+\end{center}
+
+\bg{cvgreen}{white}{Contact}\\[0.5em]
+{\footnotesize
+Weena 439A\\ % Your address
+Rotterdam \texttt{3013AL}\\
+Netherlands\\[.2cm]
+\href{tel:+31681256511}{+31 6812 565 11}\\ % Your phone number
+\href{mailto:ath.ioannis94@gmail.com}{ath.ioannis94@gmail.com}} % Your email address
+\bigskip
+
+\bigskip
+
+\bg{cvgreen}{white}{Interests}\\[0.5em]
+\texttt{Artificial Intelligence}\\[0.1em]
+\texttt{Real Time Systems}\\[0.1em]
+\texttt{Augmented-Virtual Reality}\\[0.1em]
+\texttt{Robotics}\\[0.1em]
+\texttt{Machine Learning Applications}\\[0.1em]
+\texttt{Computer Vision}\\[0.1em]
+\bigskip
+
+\bigskip
+
+\bg{cvgreen}{white}{Distinguished Skills}\\[0.5em]
+\texttt{C}\\
+\texttt{C++}\\
+\texttt{python}\\
+\texttt{TypeScript}\\
+\texttt{tensorflow pytorch}\\
+\texttt{Scientific-python-stack}\\
+\texttt{Physics Engine Development}\\
+\texttt{Software Architecture}\\
+\texttt{Computer Architecture}\\
+\texttt{Systems Orchestration}\\
+\texttt{Hardware-Software codesign}\\
+\texttt{FreeRTOS}\\
+\texttt{ROS}\\
+\texttt{Matlab}
+\bigskip
+
+\bigskip
+
+\bg{cvgreen}{white}{languages} \\[0.5em]
+English - (fluent)\\
+German - (basic)\\
+Greek - (native)
+\bigskip
+
+\bigskip
+
+\infobubble{\faGithub}{cvgreen}{white}{\href{https://github.com/supernlogn}{supernlogn}}\\
+\infobubble{\faLinkedin}{cvgreen}{white}{\href{https://www.linkedin.com/in/iathanasi}{iathanasi}}\\
+\infobubble{\faGlobe}{cvgreen}{white}{\href{https://drive.google.com/file/d/1nYNJdjk7uiycx1XPhOFVveEBxAi25FOH/view}{complete CV}}
+
+\phantom{turn the page}
+\vspace{5em}
+\phantom{turn the page}
+}
+
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Work Experience}
+\begin{tabular}{r| p{0.5\textwidth} c}
+\cvevent{Jul 2022-now}{Siemens}{Software Engineer}{The Hague \color{cvred}}{Codeveloped an autonomous vehicle simulator. Added dynamics. Added Generative AI capabilities. Modernized legacy code by emplying state-of-the-art architecture and testing}{empty.png}\\
+\cvevent{Oct 2022-Jun 2025}{Aility GmbH}{Cofounder CTO}{Lugano Switzerland - Remote}{Occupancy systems for hospitality industry}{empty.png}\\
+\cvevent{Jun 2021-Nov 2021}{Freelancer}{B2B mobile App developer}{Remote \color{cvred}}{Built apps for industrial boiler control}{empty.png}\\
+\cvevent{Oct 2020-Apr 2021}{Infoteam Informatique Technique SA}{AI Engineer}{Switzerland \color{cvred}}{Implemented a prediction system for hydroelectric turbine failures based on sensors}{empty.png}\\
+\cvevent{Mar 2020-Sept 2020}{ABB Cyber Physical Systems Group}{Intern}{Switzerland \color{cvred}}{Implemented an AI agent for Cyber-Security testing}{empty.png}\\
+\cvevent{Nov 2019-Mar 2020}{ETH Zurich}{Teaching Assistant}{Switzerland \color{cvred}}{Composed the projects for D-MATH software engineering curriculum}{ethz.jpg}\\
+\cvevent{Nov 2018-Jul 2019}{Greek Army Informatics Research Division}{Private}{Greece \color{cvred}}{}{empty.png}\\
+\cvevent{Jul 2016-Jul 2017}{Kenotom P.C.}{Embedded Software Engineer}{Thessaloniki Greece \color{cvred}}{Established the world's first industrial grade PLC programmable with microPython as an IoT system via web-interface and connectable to a wide range of devices and sensors}{empty.png}
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Degrees}
+\begin{tabular}{r p{0.65\textwidth} c}
+    \cvdegree{2019-2022}{Computer Science}{Msc}{\href{https://asl.ethz.ch}{Autonomous Systems Lab}, ETH Zurich \color{headerblue}}{}{ethz.jpg} \\
+    \cvdegree{2012-2018}{Electrical and Computer Engineering}{Diploma}{Aristotle University of Thessaloniki \color{headerblue}}{}{auth.png} \\
+\end{tabular}
+\section*{Awards}
+\begin{tabular}{r p{0.65\textwidth} c}
+    \cvaward{2016}{Best Electrical \& Computer Engineer intern}{}{Aristotle University of Thess.}{}{auth.png}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.33\textwidth}
+\section*{Academic Work}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
+    2018 & \emph{Transfer learning with deep convolutional neural networks for object detection used in real-time embedded systems}, \href{http://ikee.lib.auth.gr/record/298865}{Aristotle University of Thessaloniki library}. \\
+    2019 & \emph{Athanasiadis, Ioannis, Panagiotis Mousouliotis, and Loukas Petrou. "A Framework of Transfer Learning in Object Detection for Embedded Systems."}, \href{https://arxiv.org/abs/1811.04863}{arXiv preprint arXiv:1811.04863} \\
+    2024 & Master Thesis Supervisor together with Prof. Ferrante Alberto in Università della Svizzera italiana. Computer Science Department, \href{https://thesis.bul.sbu.usi.ch/theses/2325-2324Altrichter/pdf?1730794488}{Thesis}
+\end{tabular}
+\end{minipage}
+
+
+
+% \vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\phantom{..}%\newline
+% \newline
+}
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}
